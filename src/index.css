@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root{
   --background: #dfe8fe;
   --button: #084A74;
@@ -12,12 +14,19 @@
   --sidebar: #084A74;
   --sidebar-top: #0A4160;
   --delete-button: #ed5853;
-  --dark-sidebar: #031023;
-  --dark-button-hover:#16284D;
-  --dark-button: #0B3F94;
-  --dark-button-text: #FCFDFE;
-  --dark-svg: #5E676F;
-  --dark-svg-hover: #426AF0;
+  --ui-text: #000;
+}
+.dark{
+  --sidebar: #031023;
+  --button-hover:#95b4f3;
+  --button: #0B3F94;
+  --button-text: #FCFDFE;
+  --svg: #5d666e;
+  --svg-hover: #426AF0;
+  --primary: #1e293b;
+  --background: #0f172a;
+  --sidebar-top: #0f172a;
+  --ui-text:#FCFDFE;
 }
 
 @theme inline {
@@ -32,10 +41,5 @@
   --color-sidebar: var(--sidebar);
   --color-sidebar-top: var(--sidebar-top);
   --color-delete-btn: var(--delete-button);
-  --color-dark-sidebar: var(--dark-sidebar);
-  --color-dark-btn: var(--dark-button)
-  --color-dark-btn-hover: var(--dark-button-hover)
-  --color-dark-btn-text: var(--dark-btn-text)
-  --color-dark-svg: var(--dark-svg)
-  --color-dark-svg-hover: var(--dark-svg-hover)
+  --color-ui-text: var(--ui-text)
 }

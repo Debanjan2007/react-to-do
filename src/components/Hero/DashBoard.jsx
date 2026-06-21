@@ -14,7 +14,7 @@ const GridHelper = ({ logo, title, description }) => {
 
 export default function DashBoard() {
     return <>
-        <div className="container bg-background w-vh bg-background h-full flex flex-col gap-4 items-start justify-start">
+        <div className="container bg-background w-vh bg-background h-full flex flex-col text-ui-text gap-4 items-start justify-start">
             <div className="text-container w-full h-auto pt-3 pb-3 pl-10 pr-4 mt-2 flex flex-col gap-2">
                 <h1 className="text-4xl font-bold text-title">Welcome Back, User 👋</h1>
                 <p className="text-md text-text">Organize your tasks and boost your productivity with our intuitive and user-friendly Todo App. Stay on top of your to-do list and never miss a deadline again!</p>
