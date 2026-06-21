@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root{
+  --background: #dfe8fe;
+  --button: #084A74;
+  --button-hover: #3B6E9D;
+  --button-text: #FFFFFF;
+  --button-text-hover: #FFFFFF;
+  --primary: #FFFFFF;
+  --svg: #5E676F;
+  --svg-hover: #000000;
+  --sidebar: #084A74;
+  --sidebar-top: #0A4160;
+  --delete-button: #ed5853;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-button: var(--button);
+  --color-button-hover: var(--button-hover);
+  --color-button-text: var(--button-text);
+  --color-button-text-hover: var(--button-text-hover);
+  --color-primary: var(--primary);
+  --color-svg: var(--svg);
+  --color-svg-hover: var(--svg-hover);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-top: var(--sidebar-top);
+  --color-delete-btn: var(--delete-button)
+}
