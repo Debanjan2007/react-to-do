@@ -1,4 +1,4 @@
-﻿export function HomeSvg({className="w-6 h-6 text-svg group-hover:text-svg-hover"}) {
+﻿export function HomeSvg({className="w-6 h-6 text-svg group-hover:text-svg-hover dark:text-dark-svg"}) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

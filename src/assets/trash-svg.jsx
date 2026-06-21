@@ -1,4 +1,4 @@
-﻿export function TrashSvg({ className="w-6 h-6 text-svg group-hover:text-svg-hover" }) {
+﻿export function TrashSvg({ className="w-6 h-6 text-svg group-hover:text-svg-hover dark:text-dark-btn-text" }) {
     return <svg
     xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 0 448 512"

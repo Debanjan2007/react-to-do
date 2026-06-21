@@ -1,4 +1,4 @@
-﻿export function UserSvg({ className="w-6 h-6 text-svg-hover" }) {
+﻿export function UserSvg({ className="w-6 h-6 text-svg-hover dark:text-dark-btn-text" }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
