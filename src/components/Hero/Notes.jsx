@@ -14,6 +14,7 @@ export default function NotesUi() {
     const [TotalNotes, setTotalNotes] = useState(() => {
         return JSON.parse(localStorage.getItem("notes")) || [];
     })
+    const TotalPages = Math.ceil(TotalNotes.length / PAGE_LIMIT)
     useEffect(() => {
         const startIndex = (pageNumber - 1) * PAGE_LIMIT
         const endIndex = (pageNumber * PAGE_LIMIT)
@@ -58,7 +59,7 @@ export default function NotesUi() {
                     /> : <NothingToShow />}
                 </div>
                 <div className={`notes-page w-full h-auto flex flex-row justify-around items-center p-2  ${notes.length === 0 ? "hidden" : ""}`}>
-                    <div className="previous w-auto h-auto">
+                    <div className={`previous w-auto h-auto ${pageNumber === 1 ? "text-fade-text" : "text-ui-text"}`}>
                         <button
                             onClick={handleLeftClick}
                         >
@@ -66,7 +67,7 @@ export default function NotesUi() {
                         </button>
                     </div>
                     <p>Page: {pageNumber}</p>
-                    <div className="next">
+                    <div className={`next w-auto h-auto ${TotalPages == pageNumber ? "text-fade-text" : "text-ui-text"}`}>
                         <button
                             onClick={handleRightClick}
                         >

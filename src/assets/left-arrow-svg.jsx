@@ -7,7 +7,7 @@
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="w-10 h-10 text-ui-text"
+            className="w-10 h-10"
         >
             <path d="m15 18-6-6 6-6" />
         </svg>

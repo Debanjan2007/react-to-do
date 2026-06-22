@@ -15,6 +15,7 @@
   --sidebar-top: #0A4160;
   --delete-button: #ed5853;
   --ui-text: #000;
+  --fade-text: #979696d7;
 }
 .dark{
   --sidebar: #031023;
@@ -27,6 +28,7 @@
   --background: #0f172a;
   --sidebar-top: #0f172a;
   --ui-text:#FCFDFE;
+  --fade-text: #979696d7;
 }
 
 @theme inline {
@@ -41,5 +43,6 @@
   --color-sidebar: var(--sidebar);
   --color-sidebar-top: var(--sidebar-top);
   --color-delete-btn: var(--delete-button);
-  --color-ui-text: var(--ui-text)
+  --color-ui-text: var(--ui-text);
+  --color-fade-text: var(--fade-text);
 }
