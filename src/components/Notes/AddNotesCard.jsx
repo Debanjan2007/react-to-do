@@ -33,7 +33,7 @@ export default function AddNotesCard() {
         setDescription("");
     };
     return <>
-        <div className="container w-full h-full bg-background flex flex-col gap-6 flex-start p-8">
+        <div className="container w-full h-full bg-background text-ui-text flex flex-col gap-6 flex-start p-8">
             <div className="add-text text-svg-hover text-4xl  font-medium p-2 h-auto ">
                 <h1>Add your note 🚀</h1>
             </div>
@@ -48,7 +48,7 @@ export default function AddNotesCard() {
                             placeholder="Note title..."
                             value={title}
                             onChange={(e) => setTitle(e.target.value)}
-                            className="col-span-2 h-12 border border-svg rounded-md px-4"
+                            className="col-span-2 h-12 border border-svg rounded-md px-4 text-ui-text"
                         />
 
                         <textarea
