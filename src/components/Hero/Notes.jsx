@@ -2,6 +2,8 @@
 import ShowNotes from '../Notes/NoteShow.jsx'
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { leftArrow } from '../../assets/left-arrow-svg.jsx'
+import { rightArrow } from '../../assets/right-arrow-svg.jsx'
 
 export default function NotesUi() {
     const [notes, setNotes] = useState(() => {
@@ -32,11 +34,21 @@ export default function NotesUi() {
                     <button>Add new note</button>
                 </div>
             </NavLink>
-            <div className="notes p-6 w-full h-full bg-primary rounded-lg">
-                {notes.length > 0 ? <ShowNotes
-                    notes={notes}
-                    onDelete={DeleteNote}
-                /> : <NothingToShow />}
+            <div className="notes flex flex-col gap-2 p-6 w-full h-full bg-primary rounded-lg">
+                <div className="notes-container flex-1">
+                    {notes.length > 0 ? <ShowNotes
+                        notes={notes}
+                        onDelete={DeleteNote}
+                    /> : <NothingToShow />}
+                </div>
+                <div className={`notes-page w-full h-auto flex flex-row justify-around items-center p-2  ${notes.length === 0 ? "hidden" : ""}`}>
+                    <div className="previous w-auto h-auto">
+                        {leftArrow()}
+                    </div>
+                    <div className="next">
+                        {rightArrow()}
+                    </div>
+                </div>
             </div>
         </div>
     </>
