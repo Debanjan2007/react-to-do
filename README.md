@@ -25,7 +25,7 @@ This project was created to strengthen my understanding of React fundamentals, c
 ---
 
 <p>
-    <img src="./public/Dashboard-light.png"/>
+    <img src="./public/Dashboard-dark.png"/>
     <img src="./public/notes.png"/>
 </p>
 
