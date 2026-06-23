@@ -5,7 +5,7 @@ A simple Notes Application built with React as part of my frontend learning jour
 This project was created to strengthen my understanding of React fundamentals, component-based architecture, state management, routing, browser storage, and UI development before moving on to larger projects such as UniAuth and OmniPost.
 
 <p>
-    <img src="./public/Dashboard-light.png" width="150"/>
+    <img src="./public/Dashboard-light.png"/>
 </p>
 
 ---
@@ -25,8 +25,8 @@ This project was created to strengthen my understanding of React fundamentals, c
 ---
 
 <p>
-    <img src="./public/Dashboard-light.png" width="150" />
-    <img src="./public/notes.png" width="150"/>
+    <img src="./public/Dashboard-light.png"/>
+    <img src="./public/notes.png"/>
 </p>
 
 ## Technologies Used
